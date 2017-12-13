@@ -1,0 +1,71 @@
+<div id="wrapper" ng-class="vm.toggle ? 'toggled' : ''" style="background-color:#9b9da0;">
+
+    <sidebar></sidebar>
+<br>
+<br>
+<br>
+<br>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>{{vm.content}}</h1>
+                        <form novalidate>
+                            <div class="form-group">
+                                <label for="selectDepartureICAO">Office</label>
+                                <select id="selectDepartureICAO" 
+                                        class="form-control" 
+                                        ng-model="vm.selectedDepartureICAO" 
+                                        ng-options="apt.airportName for apt in vm.airports"></select>
+                                <p class="bg-info" ng-bind="vm.selectedDepartureICAO.airportName"></p>
+                            </div>
+                           
+                            <div class="form-group">
+                                <label for="selectWeight">Person</label>
+                                <select id="selectWeight" 
+                                        class="form-control" 
+                                        ng-model="vm.selectedWeight" 
+                                        ng-options="climb.weight for climb in vm.climbData"></select>
+                                <p class="bg-info" ng-bind="vm.selectedWeight.weight"></p>
+                            </div>                             
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<!-- /#wrapper -->
+

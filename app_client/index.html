@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="airplaneApp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
+    <!-- Custom CSS -->    
+    <link rel="stylesheet" href="/bootstrap/css/simple-sidebar.css">
+    <link rel="stylesheet" href="/angular/ui-bootstrap-2.2.0-csp.css">
+    <link rel="stylesheet" href="/stylesheets/custom.css">
+     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/logo-nav.css" rel="stylesheet">
+    
+  </head>
+  <body ng-view>
+    
+    <!-- Angular and Libraries -->  
+    <script src="/angular/angular.min.js"></script>
+    <script src="/angular/angular-route.min.js"></script>
+    <script src="/angular/angular-sanitize.min.js"></script>
+    <script src="/angular/ui-bootstrap-2.2.0.min.js"></script>
+    <script src="/angular/ui-bootstrap-tpls-2.2.0.min.js"></script>
+
+    <!-- including all client js files -->
+    <script src="app.js"></script>
+    <script src="/common/filters/temperature.filter.js"></script>
+    <script src="/common/filters/percentage.filter.js"></script>    
+    <script src="/common/services/airportData.service.js"></script>
+    <script src="/common/services/airplaneData.service.js"></script>
+    <script src="/common/services/darkskyWeather.service.js"></script>
+    <script src="/common/services/selectedData.factory.js"></script>
+    <script src="/common/services/keyStore.factory.js"></script>    
+    <script src="/common/directives/sideBar/sideBar.directive.js"></script>
+    <script src="/common/directives/footerGeneric/footerGeneric.directive.js"></script>
+    <script src="/common/directives/weatherInfo/weatherInfo.directive.js"></script>
+    <script src="/common/directives/dateNow/dateNow.directive.js"></script>
+
+    <script src="/home/home.controller.js"></script>
+    <script src="/airport/airport.controller.js"></script>
+    <script src="/climb/climb.controller.js"></script>
+    <script src="/landing/landing.controller.js"></script>
+    <script src="/takeoff/takeoff.controller.js"></script>
+    <script src="/weather/weather.controller.js"></script>    
+
+
+    <script src="/javascripts/jquery-3.1.1.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

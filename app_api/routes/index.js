@@ -3,6 +3,7 @@ var router              = express.Router();
 var ctrlAirplaneData    = require('../controllers/airplane');
 var ctrlAirportData     = require('../controllers/airport');
 var ctrlDarkSkyApi     = require('../controllers/darkskyapi');
+var ctrlSlackApi = require('../controllers/slackapi');
 
 /* TAKEOFF DATA */
 router.get('/takeoffdata/:flaps/:weight', ctrlAirplaneData.takeoffDataReadOne);
@@ -21,5 +22,7 @@ router.get('/airportdata', ctrlAirportData.airportDataReadAll);
 
 /* API KEYS */
 router.get('/darkskyapi/:lat/:lon', ctrlDarkSkyApi.getWeatherData);
+
+router.get('/slackapi', ctrlSlackApi.IncomingWebhook);
 
 module.exports = router;

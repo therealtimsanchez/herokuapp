@@ -4,7 +4,7 @@
 
   function config ($routeProvider, $locationProvider) {
     
-    console.log("BEING AIRPLANE SERVICES APP - MEAN STACK DRIVEN");
+    
     
     $routeProvider
       .when('/', {
@@ -12,31 +12,17 @@
         controller: 'homeCtrl',
         controllerAs: 'vm'
       })
-      .when('/takeoff/', {
-        templateUrl: '/takeoff/takeoff.view.html',
-        controller: 'takeoffCtrl',
-        controllerAs: 'vm'
-      })
-      .when('/landing/', {
-        templateUrl: '/landing/landing.view.html',
-        controller: 'landingCtrl',
-        controllerAs: 'vm'
-      })
-      .when('/climb/', {
+      .when('/tasks/', {
         templateUrl: '/climb/climb.view.html',
         controller: 'climbCtrl',
         controllerAs: 'vm'
       })
-      .when('/airport/', {
+      .when('/people/', {
         templateUrl: '/airport/airport.view.html',
         controller: 'airportCtrl',
         controllerAs: 'vm'
       })
-      .when('/weather/', {
-        templateUrl: '/weather/weather.view.html',
-        controller: 'weatherCtrl',
-        controllerAs: 'vm'
-      })      
+         
       .otherwise({redirectTo: '/'});
 
     // use the HTML5 History API

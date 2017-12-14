@@ -50,10 +50,12 @@
                 });            
         }
 
-        console.log("IN CLIMB DATA FOR WEIGHT: " + vm.selectedWeight.weight);        
+        
         
         //call services
         vm.getClimbDataForWeight();
     }
 
 })();
+
+
